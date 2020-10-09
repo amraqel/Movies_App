@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:id="@+id/root_layout">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+
+            ><TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/movie_data_app"
+            android:textSize="30sp"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/title"
+                android:textSize="20sp"></TextView>
+
+            <EditText
+                android:id="@+id/titleField"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"></EditText>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/year"
+                android:textSize="20sp"></TextView>
+
+            <EditText
+                android:id="@+id/yearField"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"></EditText>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/genre"
+                android:textSize="20sp"></TextView>
+
+            <Spinner
+                android:id="@+id/genreField"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"></Spinner>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:onClick="search"
+                android:text="@string/search" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imgsLayout"
+                android:orientation="horizontal">
+
+
+
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#FFFFFF"
+                android:visibility="visible"></ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textSize="20sp"
+                android:text="@string/results"></TextView>
+
+            <EditText
+                android:id="@+id/results"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:width="350dp"
+                android:height="100dp"
+                android:editable="false"
+                ></EditText>
+
+        </LinearLayout>
+
+
+
+
+
+
+    </ScrollView>
+
+
+
+</LinearLayout>
